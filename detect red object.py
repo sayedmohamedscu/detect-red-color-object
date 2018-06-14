@@ -42,16 +42,15 @@ while(1):
                 cv2.putText(img,(d2),(cx,cy-30), font,1,(255,255,255),1,cv2.LINE_AA)
                 cv2.putText(img,(d1),(cx,cy), font,1,(255,255,255),1,cv2.LINE_AA)
 
-                cv2.circle(frame,(cx,cy), 6, (0,255,0), -1)
+                cv2.circle(img,(cx,cy), 6, (0,255,0), -1)
+                
+                cv2.imshow('Orignal',img)
                 
                 #print (cx,cy)
-                rimg=cv2.flip(img,1)
-
-
-                cv2.imshow('Orignal',rimg)
+                #rimg=cv2.flip(img,1) #to flip video
+                #cv2.imshow('Orignal',rimg)
                 
-                print ('xxx', area)
-
+                print ('area', area)
 
 
 
